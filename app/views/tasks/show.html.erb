@@ -1,11 +1,18 @@
-<h1><%= @task.title %></h1>
-<button class="btn">
+<div class="container">
+<div class="div-du-haut"><h1><%= @task.title %></h1>
+<button class="btn edit">
   <%= link_to "Edit this task", edit_task_path %>
 </button>
+</div>
+<div class="details">
 <p><%= @task.details %></p>
+</div>
+<div class="completed">
     <% if @task.completed %>
       <i class="far fa-check-square"></i> This task is completed
     <% else %>
       <i class="far fa-square"></i> This task is not completed yet
     <% end %>
+</div>
 <p><%= link_to "Back to list", tasks_path %></p>
+</div>

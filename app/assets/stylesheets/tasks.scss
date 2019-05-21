@@ -9,3 +9,39 @@
 ul {
   list-style: none;
 }
+
+.div-du-haut {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn.edit {
+  color: white;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  border-radius: 10px;
+}
+
+.btn.edit:hover {
+  background-color: rgba($color: #000000, $alpha: 0.8);
+}
+
+.btn.edit a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.details {
+  padding: 50px;
+  background-color: rgba($color: #000000, $alpha: 0.05);
+  border-radius: 5px;
+  margin: 50px auto;
+}
+
+.completed {
+  padding: 50px;
+  border-radius: 5px;
+  margin: 50px auto;
+}
